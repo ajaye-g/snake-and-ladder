@@ -1,16 +1,57 @@
-var cube = document.getElementById('cube');
+const dice = document.querySelector('.dice');
+const rollBtn = document.querySelector('.roll');
 
-var min = 1;
-var max = 24;
+const randomDice = () => {
 
-cube.onclick = function() {
-  var xRand = getRandom(max, min);
-  var yRand = getRandom(max, min);
-    
-  cube.style.webkitTransform = 'rotateX('+xRand+'deg) rotateY('+yRand+'deg)';
-  cube.style.transform = 'rotateX('+xRand+'deg) rotateY('+yRand+'deg)';
+    const random = Math.floor(Math.random() * 10);
+
+    if (random >= 1 && random <= 6) {
+        rollDice(random);
+    }
+    else {
+        randomDice();
+    }
 }
 
-function getRandom(max, min) {
-  return (Math.floor(Math.random() * (max-min)) + min) * 90;
+const rollDice = random => {
+
+    dice.style.animation = 'rolling 4s';
+
+    setTimeout(() => {
+
+        switch (random) {
+            case 1:
+                dice.style.transform = 'rotateX(0deg) rotateY(0deg)';
+                break;
+
+            case 6:
+                dice.style.transform = 'rotateX(180deg) rotateY(0deg)';
+                break;
+
+            case 2:
+                dice.style.transform = 'rotateX(-90deg) rotateY(0deg)';
+                break;
+
+            case 5:
+                dice.style.transform = 'rotateX(90deg) rotateY(0deg)';
+                break;
+
+            case 3:
+                dice.style.transform = 'rotateX(0deg) rotateY(90deg)';
+                break;
+
+            case 4:
+                dice.style.transform = 'rotateX(0deg) rotateY(-90deg)';
+                break;
+
+            default:
+                break;
+        }
+
+        dice.style.animation = 'none';
+
+    }, 4050);
+
 }
+
+rollBtn.addEventListener('click', randomDice);
