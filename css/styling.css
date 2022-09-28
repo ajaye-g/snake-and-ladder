@@ -1,16 +1,14 @@
 
 body{
 	overflow-y:hidden;
-	background-image:url(../asset/mainImage2.png)
+	background-color:#dce6c3;
 	
 }
+
 .mainBody{
 	display:flex;
 }
-.image1{
-	width:650px;
-	margin-left:300px;
-}
+
 
 .container {
     display: grid;
@@ -157,4 +155,67 @@ body{
 .roll:hover {
     color: #fff;
     background: #b33951;
+}
+.divRow1{
+	display:flex;
+}
+.divRow2{
+	display:flex;
+}
+.divRow3{
+	display:flex;
+}
+
+.divRow4{
+	display:flex;
+}
+.divRow5{
+	display:flex;
+}
+.divRow6{
+	display:flex;
+}
+.divRow7{
+	display:flex;
+}
+.divRow8{
+	display:flex;
+}
+.divRow9{
+	display:flex;
+}
+.divRow10{
+	display:flex;
+}
+.mainDiv{
+	background-image: url(../asset/image1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;	
+}
+.divcol{
+	width:60px;
+	height:60px;
+}
+.players{
+	display:flex;
+	justify-content: space-between;
+}
+.player1{
+	background-color:#bae4f5;
+	width:80px;
+	padding:20px;
+	border-radius:5px;
+}
+.player2{
+	background-color:#a8edcb;
+	width:80px;
+	padding:20px;	
+	border-radius:5px;
+}
+.mouse1{
+	width:35px;
+	
+}
+.mouse2{
+	width:38px;
 }

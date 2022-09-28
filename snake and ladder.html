@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake And Ladder</title>
+    <script src="asset/jquery.min.js"></script>
     <link rel="stylesheet" href="css/styling.css">
     <script defer src="js/index.js"></script>
 </head>
@@ -13,29 +14,170 @@
 
  
 <div class="mainBody">  
-	<div class="placeToPlay">
-	<img src="asset/image.png" alt="logo" class="image1"> 
-	
-	</div>
-	<div class="dicePlace">
-	<div class="container">
+	   <div class="mainDiv">
+		<div class="divRow1">
+			<div class="divcol" id="100"></div>
+			<div class="divcol" id="99"></div>
+			<div class="divcol" id="98"></div>
+			<div class="divcol" id="97"></div>
+			<div class="divcol" id="96"></div>
+			<div class="divcol" id="95"></div>
+			<div class="divcol" id="94"></div>
+			<div class="divcol" id="93"></div>
+			<div class="divcol" id="92"></div>
+			<div class="divcol" id="91"></div>
+
+		</div>
+		<div class="divRow2">
+			<div class="divcol" id="81"></div>
+			<div class="divcol" id="82"></div>
+			<div class="divcol" id="83"></div>
+			<div class="divcol" id="84"></div>
+			<div class="divcol" id="85"></div>
+			<div class="divcol" id="86"></div>
+			<div class="divcol" id="87"></div>
+			<div class="divcol" id="88"></div>
+			<div class="divcol" id="89"></div>
+			<div class="divcol" id="90"></div>
+
+		</div>
+		<div class="divRow3">
+			<div class="divcol" id="80"></div>
+			<div class="divcol" id="79"></div>
+			<div class="divcol" id="78"></div>
+			<div class="divcol" id="77"></div>
+			<div class="divcol" id="76"></div>
+			<div class="divcol" id="75"></div>
+			<div class="divcol" id="74"></div>
+			<div class="divcol" id="73"></div>
+			<div class="divcol" id="72"></div>
+			<div class="divcol" id="71"></div>
+
+		</div>
+		<div class="divRow4">
+			<div class="divcol" id="61"></div>
+			<div class="divcol" id="62"></div>
+			<div class="divcol" id="63"></div>
+			<div class="divcol" id="64"></div>
+			<div class="divcol" id="65"></div>
+			<div class="divcol" id="66"></div>
+			<div class="divcol" id="67"></div>
+			<div class="divcol" id="68"></div>
+			<div class="divcol" id="69"></div>
+			<div class="divcol" id="70"></div>
+
+		</div>
+		<div class="divRow5">
+			<div class="divcol" id="60"></div>
+			<div class="divcol" id="59"></div>
+			<div class="divcol" id="58"></div>
+			<div class="divcol" id="57"></div>
+			<div class="divcol" id="56"></div>
+			<div class="divcol" id="55"></div>
+			<div class="divcol" id="54"></div>
+			<div class="divcol" id="53"></div>
+			<div class="divcol" id="52"></div>
+			<div class="divcol" id="51"></div>
+
+		</div>
+		<div class="divRow6">
+			<div class="divcol" id="41"></div>
+			<div class="divcol" id="42"></div>
+			<div class="divcol" id="43"></div>
+			<div class="divcol" id="44"></div>
+			<div class="divcol" id="45"></div>
+			<div class="divcol" id="46"></div>
+			<div class="divcol" id="47"></div>
+			<div class="divcol" id="48"></div>
+			<div class="divcol" id="49"></div>
+			<div class="divcol" id="50"></div>
+
+		</div>
+		<div class="divRow7">
+			<div class="divcol" id="40"></div>
+			<div class="divcol" id="39"></div>
+			<div class="divcol" id="38"></div>
+			<div class="divcol" id="37"></div>
+			<div class="divcol" id="36"></div>
+			<div class="divcol" id="35"></div>
+			<div class="divcol" id="34"></div>
+			<div class="divcol" id="33"></div>
+			<div class="divcol" id="32"></div>
+			<div class="divcol" id="31"></div>
+
+		</div>
+		<div class="divRow8">
+			<div class="divcol" id="21"></div>
+			<div class="divcol" id="22"></div>
+			<div class="divcol" id="23"></div>
+			<div class="divcol" id="24"></div>
+			<div class="divcol" id="25"></div>
+			<div class="divcol" id="26"></div>
+			<div class="divcol" id="27"></div>
+			<div class="divcol" id="28"></div>
+			<div class="divcol" id="29"></div>
+			<div class="divcol" id="30"></div>
+
+		</div>
+		<div class="divRow9">
+			<div class="divcol" id="20"></div>
+			<div class="divcol" id="19"></div>
+			<div class="divcol" id="18"></div>
+			<div class="divcol" id="17"></div>
+			<div class="divcol" id="16"></div>
+			<div class="divcol" id="15"></div>
+			<div class="divcol" id="14"></div>
+			<div class="divcol" id="13"></div>
+			<div class="divcol" id="12"></div>
+			<div class="divcol" id="11"></div>
+
+		</div>
+		<div class="divRow10">
+			<div class="divcol" id="1"></div>
+			<div class="divcol" id="2"></div>
+			<div class="divcol" id="3"></div>
+			<div class="divcol" id="4"></div>
+			<div class="divcol" id="5"></div>
+			<div class="divcol" id="6"></div>
+			<div class="divcol" id="7"></div>
+			<div class="divcol" id="8"></div>
+			<div class="divcol" id="9"></div>
+			<div class="divcol" id="10"></div>
+
+		</div>
+	   </div>
+		 
+		<div class="mainDiv2">
+		   <div class="dicePlace">
+			<div class="container">
         
-        <div class="dice">
-            <div class="face front"></div>
-            <div class="face back"></div>
-            <div class="face top"></div>
-            <div class="face bottom"></div>
-            <div class="face right"></div>
-            <div class="face left"></div>
-        </div>
+        			<div class="dice">
+            			  <div class="face front"></div>
+            			  <div class="face back"></div>
+            			  <div class="face top"></div>
+            			  <div class="face bottom"></div>
+            			  <div class="face right"></div>
+            			  <div class="face left"></div>
+        			</div>
 
-        <button class="roll">
-            Roll Dice
-        </button>
+        			<button class="roll">
+            				Roll Dice
+        			</button>
 
-    </div>
+    			</div>
 
-</div>
+		  </div>
+		  
+		  <div class="players">
+			<div class="player1"> player 1
+				<img src="asset/mouse1.png" alt="player1" class="mouse1">
+			</div>
+			<div class="player2"> player 2
+				<img src="asset/mouse2.png" alt="player2" class="mouse2">
+			</div>
+		  </div>
+		</div>
+		
 </div>
 
 
