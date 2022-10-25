@@ -21,29 +21,30 @@ const randomDice = () => {
                 num++;
 
             }
+	    
             start(random);
             console.log(sum + " player1");
             $('#' + sum + "").append('<img src="asset/mouse1.png" class="mouse1">');
-	    if(sum==100){
-	    	alert("PLAYER 1 WINS");
-	    }
+            if(sum==100){
 
+	   }
+	    
 
         } else {
             if (random == 1) {
                 num2++;
             }
+	    
             start2(random);
             console.log(sum2 + " player2");
             $('#' + sum2 + "").append('<img src="asset/mouse2.png" class="mouse2">');
-	    if(sum2==100){
-	    	alert("PLAYER 2 WINS");
+	    if(sum2==0){
+	    	
 	    }
 
+
         }
-
-
-
+	
 
     } else {
         randomDice();
@@ -102,6 +103,11 @@ function start(random) {
     if (num > 0) {
         $(".mouse1").remove();
         sum = sum + random;
+	
+
+	
+
+
 
 
 
@@ -175,6 +181,11 @@ function start2(random) {
     if (num2 > 0) {
         $(".mouse2").remove();
         sum2 = sum2 + random;
+
+
+	
+
+
 
 
 
